@@ -17,6 +17,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
+    <link rel="icon" href="img/favicon-32x32.png">
     <title>Frontend Mentor | Snap</title>
  
 </head>
@@ -26,11 +27,11 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-light mx-3 my-2">
         <a href="#" class="navbar-brand">
-          <img src="images/logo.svg" alt="">
+          <img src="img/logo.svg" alt="">
         </a>
          
         <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="nav-principal">
@@ -48,14 +49,16 @@
               <a href="#" class="nav-link">About</a>
             </li>
           </ul>
+
+          <div class="login ml-auto d-flex">
+            <ul class="navbar-nav align-login">
+              <a href="#" class="nav-link mr-4">Login</a>
+              <button type="submit" class="btn btn-outline-dark" style="border-radius: 15px;">Registrar</button>
+            </ul>  
+          </div>
         </div>
 
-        <div class="login">
-          <ul class="navbar-nav">
-            <a href="#" class="nav-link mr-4">Login</a>
-            <button type="submit" class="btn btn-outline-dark" style="border-radius: 15px;">Registrar</button>
-          </ul>  
-        </div>
+      
       </nav>
     </header><!-- fim cabeçalho-->
 
@@ -64,10 +67,10 @@
     <!-- inicio container-->
     <div class="container">
 
-      <div class="row">
+      <div class="row d-flex">
         
           <!-- textos da seção -->
-          <div class="align-self-center p-3 mt-5 col-md-6">
+          <div class="align-self-center p-3 mt-2 col-md-6 col-sm-12">
               <h1> <strong>Make<br>
               remote work</h1></strong>
               <br>
@@ -75,35 +78,48 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sequi dolorem, repellendus doloribus nisi distinctio consequuntur alias ex ipsum labore.
               </p>
               
-              <a href="#">
-                <button type="submit" class="btn mt-4 mb-4">Learn more</button>
-              </a>
-            
+              <div>
+                <a href="#">
+                   <button type="submit" class="btn mt-4 mb-4 ">Learn more</button>
+                </a>
+              </div>
+              
 
-                <div class="icon mt-5 teste clearfix">
-                  <ul>
-                  <a href="#">
-                    <i class="fa-solid fa-handshake icon pr-2"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa-brands fa-behance icon pl-5 pr-2"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa-brands fa-soundcloud icon pl-5 pr-2"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa-brands fa-reddit-alien icon pl-5"></i>
-                  </a>
+              <!-- inicio icones-->
+                <div class="icon mt-5 d-flex">
+                  <ul class="nav barra-icone">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="fa-solid fa-handshake icon"></i>
+                      </a>
+                    </li>
+                  
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                       <i class="fa-brands fa-behance icon"></i>
+                      </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                       <i class="fa-brands fa-soundcloud icon"></i>
+                      </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="fa-brands fa-reddit-alien icon"></i>
+                      </a>
+                    </li>
                   </ul>
                 </div>
           </div>
 
-          <div class="d-flex justify-content-end col-md-6">
+          <!-- inicio imagem-->
+          <div class="d-flex justify-content-center col-md-6 col-sm-12">
             <img src="img/image-hero-desktop.png" width="390px" height="480px" alt="">
           </div>
         </div>
-
-        
 
     </div><!--fim container-->
   </section>
